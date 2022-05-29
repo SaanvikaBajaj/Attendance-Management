@@ -38,11 +38,23 @@ using a Linear SVM (scikit-learn)
 
 ## How To Run ?
 - clone it on your computer
+- Ensure you have python 3 or Higher version. I am using python 3.9.4
 - make a separate [python virtual environment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) or use the default one already installed on your machine
 - Download [this](https://drive.google.com/uc?export=download&id=1HzO-rnEqgkZ6tLt48yWhYgHk1_zOIYhf) file 
  - put it inside **``` \Attendance-System-Using-Face-Recognition\face_recognition_data ```** directory
+ - Download Cmake version 3.22.4 and ensure you have Visual studio for c++ installed. If not then while setting up Visual Studio Installer select Visual Studio C++ for Desktop Development.
 - run **``` pip install -r requirements.txt inside \Attendance-System-Using-Face-Recognition ```** directory
 - Run **``` python manage.py runserver ```** inside **``` \Attendance-System-Using-Face-Recognition ```** directory to run the project
+
+## Login Credentials
+
+- For Admin:
+Username : admin
+Password : admin
+
+- For Saanvi:
+Username : Saanvi
+Password : wxyz@6789
 
 ## Powerpoint Presentation 🎓
 [Link To Ppt](https://docs.google.com/presentation/d/1WE80gKdXAbal9PpTT0HVD9EKgKLFdDCB/edit?usp=sharing&ouid=113612638135986186834&rtpof=true&sd=true)
