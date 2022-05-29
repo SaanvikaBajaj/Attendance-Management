@@ -1,0 +1,106 @@
+ {% load static %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <style>
+    h5{
+      text-decoration: none;
+          width: 200px;
+          outline: none !important;
+          border: 2px solid;
+          border-radius:30px;
+          background-color:transparent;
+          color:black;
+          float: right; 
+    }
+    body
+    {
+      height: 100%;
+            background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('{% static "recognition/img/home_image1.jpg"%}');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            color:#fff;
+    }
+
+  </style>
+	
+</head>
+ <body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-family:'Times New Roman', Times, serif; padding:1px;">
+  <a class="navbar-brand" href="{%url 'view-attendance-home' %}"><h3 style="color:black;">Attendance Dashboard</h3></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+     
+      <li class="nav-item active">
+        <a class="nav-link" href="{%url 'view-attendance-employee' %}"><h5 style="padding:6px 2px 6px 10px;">By Employee</h5></a>
+      </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="{% url 'view-attendance-date' %}"><h5 style="padding:6px 2px 6px 10px;">By Date</h5></a>
+      </li>
+
+
+
+         <li class="nav-item active">
+        <a class="nav-link" href="{% url 'dashboard' %}"><h5 style="padding:6px 2px 6px 10px;">Back to Admin Panel</h5></a>
+      </li>
+  
+    </ul>
+  </div>
+</nav>
+
+
+
+
+  <div class="card" style="margin:2em; font-family:'Times New Roman', Times, serif;background-color: rgb(0,3,0,0.35); margin-top: 75px;">
+    <div class="card-body">
+
+ 
+<h2> Today's Statistics </h2>
+ 	<div class="row" style="margin-left: 12em">
+<div class="card" style="width: 20em; background-color: #338044; text-align : center; margin-left: 5em; margin-top: 3em; color: white;">
+  <div class="card-body">
+    <h4 class="card-title"> <b>Total Number Of Employees</b></h4>
+    
+    <p class="card-text" style="padding-top: 20px; font-size: 28px;"> <b>{{total_num_of_emp }}</b></p>
+   
+  </div>
+</div>
+<div class="card" style="width: 20em; background-color: #80335b; text-align : center; margin-left: 5em; margin-top: 3em; color: white;">
+  <div class="card-body">
+    <h4 class="card-title"> <b> Employees present today</b></h4>
+    
+    <p class="card-text" style="padding-top: 50px; font-size: 28px;"><b> {{emp_present_today }}</b></p>
+   
+  </div>
+</div>
+</div>
+</div>
+</div>
+ 
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+ </body>
+ </html>
+
+ 
