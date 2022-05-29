@@ -52,9 +52,9 @@ using a Linear SVM (scikit-learn)
 Username : admin
 Password : admin
 
-- For Saanvi:
-Username : Saanvi
-Password : wxyz@6789
+- For Pramila:
+Username : Pramila
+Password : mummy@16
 
 ## Powerpoint Presentation 🎓
 [Link To Ppt](https://docs.google.com/presentation/d/1WE80gKdXAbal9PpTT0HVD9EKgKLFdDCB/edit?usp=sharing&ouid=113612638135986186834&rtpof=true&sd=true)
